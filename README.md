@@ -26,11 +26,12 @@
 
 ## 🛠️ Installation
 
-> **Note:** The tool uses Python standard libraries only. No `pip install` required!
+> [!NOTE]
+> The tool uses Python standard libraries only. No `pip install` required!
 
 ```bash
 # Clone the repo
-git clone https://github.com/luchaking0day/reconx.git
+git clone [https://github.com/luchaking0day/reconx.git](https://github.com/luchaking0day/reconx.git)
 cd reconx
 
 # Make executable
@@ -41,7 +42,6 @@ sudo cp reconx.py /usr/local/bin/reconx
 
 # Optional: install whois and dnsutils for best results
 sudo apt install whois dnsutils
-
 
 # Run all modules
 reconx example.com
@@ -59,29 +59,34 @@ reconx example.com -s --wordlist /usr/share/wordlists/subdomains.txt
 reconx example.com -p --top-ports 200 --timeout 0.5
 
 
-Short	Long Flag	Description
--w	--whois	Run WHOIS enumeration
--d	--dns	Run DNS enumeration
--s	--subdomains	Run subdomain scan (brute-force)
--p	--ports	Run port scanning
--a	--all	Run all reconnaissance modules
--o	--output <file>	Save complete output to a JSON file
-	--wordlist <file>	Path to a custom wordlist for subdomains
-	--top-ports <int>	Number of top ports to scan (e.g., 200)
-	--timeout <float>	Set connection timeout in seconds
+Markdown
+
+### All flags
+
+| Short | Long Flag           | Description                                  |
+| :---: | :------------------ | :------------------------------------------- |
+| `-w`  | `--whois`           | Run WHOIS enumeration                        |
+| `-d`  | `--dns`             | Run DNS enumeration                          |
+| `-s`  | `--subdomains`      | Run subdomain scan (brute-force)             |
+| `-p`  | `--ports`           | Run port scanning                            |
+| `-a`  | `--all`             | Run all reconnaissance modules               |
+| `-o`  | `--output <file>`   | Save complete output to a JSON file          |
+|       | `--wordlist <file>` | Path to a custom wordlist for subdomains     |
+|       | `--top-ports <int>` | Number of top ports to scan (e.g., 200)      |
+|       | `--timeout <float>` | Set connection timeout in seconds            |
+
 
 ⚙️ Compatibility
 
-        ✅ Kali Linux (recommended)
+    ✅ Kali Linux (recommended)
 
-        ✅ Ubuntu / Debian
+    ✅ Ubuntu / Debian
 
-        ✅ macOS (without dig/whois fallback to socket)
+    ✅ macOS (without dig/whois fallback to socket)
 
-        ✅ Python 3.10+
+    ✅ Python 3.10+
 
-        ❌ Windows (not tested)
-
+    ❌ Windows (not tested)
 
 ⚠️ Disclaimer
 
