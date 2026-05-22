@@ -1,0 +1,5 @@
+# ReconX dependencies
+# All modules use Python standard library only — no pip install required!
+# Optional: install these for richer output
+# python-whois>=0.9.3    # alternative WHOIS library
+# dnspython>=2.6.0       # alternative DNS resolver
