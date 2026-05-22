@@ -56,28 +56,6 @@ reconx example.com -a -o results/example.json
 reconx example.com -s --wordlist /usr/share/wordlists/subdomains.txt
 reconx example.com -p --top-ports 200 --timeout 0.5
 
-Compatibility
-✅ Kali Linux (recommended)
-
-✅ Ubuntu / Debian
-
-✅ macOS (without dig/whois fallback to socket)
-
-✅ Python 3.10+
-
-❌ Windows (not tested)
-
-Disclaimer
-This tool is intended for educational purposes and authorized penetration testing only.
-
-Always obtain proper written permission before scanning systems you do not own.
-
-The author is not responsible for any misuse or damage caused by this tool.
-
-License
-MIT License — see LICENSE for details.
-
-
 
 
 
