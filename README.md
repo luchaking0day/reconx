@@ -1,4 +1,4 @@
-# 🔍 ReconX — Domain & IP OSINT Reconnaissance Tool
+# 🔍 ReconX - Domain & IP OSINT Reconnaissance Tool
 
 <p align="center">
   <img src="https://img.shields.io/badge/python-3.10%2B-blue?style=flat-square&logo=python" />
