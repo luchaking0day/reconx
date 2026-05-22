@@ -40,10 +40,10 @@ sudo cp reconx.py /usr/local/bin/reconx
 # No pip install needed — uses Python standard library only
 # Optional: install whois and dnsutils for best results
 sudo apt install whois dnsutils
-
 # Run all modules
 reconx example.com
 
+## USAGE
 # Run specific modules
 reconx example.com -w -d           # WHOIS + DNS
 reconx example.com -s              # Subdomains only
@@ -56,6 +56,31 @@ reconx example.com -a -o results/example.json
 reconx example.com -s --wordlist /usr/share/wordlists/subdomains.txt
 reconx example.com -p --top-ports 200 --timeout 0.5
 
+All flagsShortLong FlagDescription-w--whoisRun WHOIS enumeration-d--dnsRun DNS enumeration-s--subdomainsRun subdomain scan (brute-force)-p--portsRun port scanning-a--allRun all reconnaissance modules-o--output <file>Save complete output to a JSON file--wordlist <file>Path to a custom wordlist for subdomains--top-ports <int>Number of top ports to scan (e.g., 200)--timeout <float>Set connection timeout in seconds
+
+Compatibility
+
+    ✅ Kali Linux (recommended)
+
+    ✅ Ubuntu / Debian
+
+    ✅ macOS (without dig/whois fallback to socket)
+
+    ✅ Python 3.10+
+
+    ❌ Windows (not tested)
+
+Disclaimer
+
+    This tool is intended for educational purposes and authorized penetration testing only.
+
+    Always obtain proper written permission before scanning systems you do not own.
+
+    The author is not responsible for any misuse or damage caused by this tool.
+
+License
+
+MIT License — see LICENSE for details.
 
 
 
