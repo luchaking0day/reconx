@@ -99,3 +99,7 @@ reconx example.com -p --top-ports 200 --timeout 0.5
 📄 License
 
 MIT License — see LICENSE for details.
+
+# Custom wordlist + more ports
+reconx example.com -s --wordlist /usr/share/wordlists/subdomains.txt
+reconx example.com -p --top-ports 200 --timeout 0.5
