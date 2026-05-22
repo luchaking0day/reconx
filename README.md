@@ -30,7 +30,7 @@
 
 ```bash
 # Clone the repo
-git clone [https://github.com/luchaking0day/reconx.git](https://github.com/luchaking0day/reconx.git)
+git clone https://github.com/luchaking0day/reconx.git
 cd reconx
 
 # Make executable
