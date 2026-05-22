@@ -34,54 +34,25 @@ cd reconx
 # Make executable
 chmod +x reconx.py
 
+# Install globally (allows running 'reconx' from anywhere)
+sudo cp reconx.py /usr/local/bin/reconx
+
 # No pip install needed — uses Python standard library only
 # Optional: install whois and dnsutils for best results
 sudo apt install whois dnsutils
-```
 
----
-
-## Usage
-
-```bash
 # Run all modules
-python3 reconx.py example.com
+reconx example.com
 
 # Run specific modules
-python3 reconx.py example.com -w -d          # WHOIS + DNS
-python3 reconx.py example.com -s             # Subdomains only
-python3 reconx.py example.com -p             # Ports only
+reconx example.com -w -d           # WHOIS + DNS
+reconx example.com -s              # Subdomains only
+reconx example.com -p              # Ports only
 
 # Save output to JSON
-python3 reconx.py example.com -a -o results/example.json
+reconx example.com -a -o results/example.json
 
 # Custom wordlist + more ports
-python3 reconx.py example.com -s --wordlist /usr/share/wordlists/subdomains.txt
-python3 reconx.py example.com -p --top-ports 200 --timeout 0.5
-```
+reconx example.com -s --wordlist /usr/share/wordlists/subdomains.txt
+reconx example.com -p --top-ports 200 --timeout 0.5
 
-### All flags
-
----
-
-## Compatibility
-
-- ✅ Kali Linux (recommended)
-- ✅ Ubuntu / Debian
-- ✅ macOS (without `dig`/`whois` fallback to socket)
-- ✅ Python 3.10+
-- ❌ Windows (not tested)
-
----
-
-## Disclaimer
-
-> This tool is intended for **educational purposes** and **authorized penetration testing only**.  
-> Always obtain proper written permission before scanning systems you do not own.  
-> The author is not responsible for any misuse or damage caused by this tool.
-
----
-
-## License
-
-MIT License — see [LICENSE](LICENSE) for details.
