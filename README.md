@@ -56,16 +56,19 @@ reconx example.com -a -o results/example.json
 reconx example.com -s --wordlist /usr/share/wordlists/subdomains.txt
 reconx example.com -p --top-ports 200 --timeout 0.5
 
-Short,Long Flag,Description
--w,--whois,Run WHOIS enumeration
--d,--dns,Run DNS enumeration
--s,--subdomains,Run subdomain scan (brute-force)
--p,--ports,Run port scanning
--a,--all,Run all reconnaissance modules
--o,--output <file>,Save complete output to a JSON file
-,--wordlist <file>,Path to a custom wordlist for subdomains
-,--top-ports <int>,"Number of top ports to scan (e.g., 200)"
-,--timeout <float>,Set connection timeout in seconds
+### All flags
+
+| Short | Long Flag           | Description                                  |
+| :---: | :------------------ | :------------------------------------------- |
+| `-w`  | `--whois`           | Run WHOIS enumeration                        |
+| `-d`  | `--dns`             | Run DNS enumeration                          |
+| `-s`  | `--subdomains`      | Run subdomain scan (brute-force)             |
+| `-p`  | `--ports`           | Run port scanning                            |
+| `-a`  | `--all`             | Run all reconnaissance modules               |
+| `-o`  | `--output <file>`   | Save complete output to a JSON file          |
+|       | `--wordlist <file>` | Path to a custom wordlist for subdomains     |
+|       | `--top-ports <int>` | Number of top ports to scan (e.g., 200)      |
+|       | `--timeout <float>` | Set connection timeout in seconds            |
 
 Compatibility
 ✅ Kali Linux (recommended)
