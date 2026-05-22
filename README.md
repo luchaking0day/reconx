@@ -58,8 +58,6 @@ reconx example.com -a -o results/example.json
 reconx example.com -s --wordlist /usr/share/wordlists/subdomains.txt
 reconx example.com -p --top-ports 200 --timeout 0.5
 
-
-
 ### All flags
 
 | Short | Long Flag           | Description                                  |
@@ -100,6 +98,3 @@ reconx example.com -p --top-ports 200 --timeout 0.5
 
 MIT License — see LICENSE for details.
 
-# Custom wordlist + more ports
-reconx example.com -s --wordlist /usr/share/wordlists/subdomains.txt
-reconx example.com -p --top-ports 200 --timeout 0.5
