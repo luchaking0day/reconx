@@ -51,6 +51,6 @@ def subdomain_scan(target: str, wordlist_path: str, timeout: float = 1.0, thread
                 bar = f"[{'█' * pct}{'░' * (30 - pct)}] {done}/{len(candidates)}"
                 print(f"\r    {Colors.DIM}{bar}{Colors.RESET}", end="", flush=True)
 
-    print()  # newline after progress
+    print()  
     print_success(f"Found {len(found)} subdomains.")
     return found
