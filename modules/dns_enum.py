@@ -45,7 +45,7 @@ def dns_enum(target: str) -> dict:
             for ip in ips:
                 print_found("A", ip)
 
-                # Reverse DNS
+                
                 try:
                     hostname = socket.gethostbyaddr(ip)[0]
                     print_found("PTR", hostname)
@@ -77,7 +77,7 @@ def dns_enum(target: str) -> dict:
     if not results:
         print_warning("No DNS records found.")
 
-    # Reverse PTR for each A record
+
     for ip in results.get("A", []):
         try:
             hostname = socket.gethostbyaddr(ip)[0]
