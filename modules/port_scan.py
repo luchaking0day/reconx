@@ -4,7 +4,6 @@ import concurrent.futures
 from modules.utils import print_section, print_found, print_open_port, print_info, print_warning, print_success, Colors
 
 
-# Top 100 most common ports
 TOP_100_PORTS = [
     21, 22, 23, 25, 53, 80, 81, 88, 110, 111,
     119, 123, 135, 137, 138, 139, 143, 161, 179, 194,
